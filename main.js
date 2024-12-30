@@ -4,11 +4,23 @@
 // };
 
 // second approach with for loop
+// const sumArray = (arr) => {
+//   let sum = 0;
+
+//   for (i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+
+//   return sum;
+// };
+
+// third approach wiht for-of loop
+// this is the more modern approach
 const sumArray = (arr) => {
   let sum = 0;
 
-  for (i = 0; i < arr.length; i++) {
-    sum += arr[i];
+  for (const num of arr) {
+    sum += num;
   }
 
   return sum;
